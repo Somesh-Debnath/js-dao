@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-color: #07183f;
   color: #fff;
   overflow-x: hidden;
 }
@@ -12,9 +12,12 @@ body {
   min-height: 100vh;
   display: flex;
 }
-
+p{
+  padding-bottom: 10px;
+}
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
+  margin-top: -30px;
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -53,8 +56,10 @@ h1 {
   padding-right: 0.5rem;
   margin: auto;
   align-content: center;
+  align-items: center;
   display: flex;
   text-align: center;
+  max-width: fit-content;
 }
 
 .member-page > div {
@@ -93,7 +98,7 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  color: #07183f;
 }
 
 .member-page form .card > div {
@@ -121,10 +126,12 @@ button {
   color: #fff;
   border: none;
   font-weight: bold;
+  align-items: center;
   font-family: inherit;
   padding: 1.2rem 2rem;
   text-transform: uppercase;
   border-radius: 3rem;
+  max-width: 70%;
   font-size: 1.2rem;
 }
 

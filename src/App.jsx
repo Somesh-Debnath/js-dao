@@ -164,6 +164,7 @@ const mintNFT=async()=>{
     return (
       <div className="landing">
         <h1 className='h1'>Welcome to phirieDAO</h1>
+        <p >A DAO for Miles' (a Bengali Rock Band) fans</p>
         <button onClick={connectWithMetamask} className="px-28 btn-hero">
           Connect your wallet
         </button>
@@ -188,6 +189,7 @@ const mintNFT=async()=>{
     return (
       <div className="member-page ">
         <h1>🍪DAO Member Page</h1>
+        <p >A DAO for Miles' (a Bengali Rock Band) fans</p>
         <p>Congratulations on being a member</p>
         <div>
           <div>
