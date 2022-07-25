@@ -104,6 +104,7 @@ h1 {
 
 .member-page form small {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .card {
@@ -138,4 +139,5 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+  margin-bottom: 2rem;
 }
