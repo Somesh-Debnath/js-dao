@@ -1,6 +1,7 @@
 import { useAddress, useMetamask,useNetwork, useEditionDrop,useVote, useToken} from '@thirdweb-dev/react';
 import { useState, useEffect, useMemo } from 'react';
 import { ChainId } from '@thirdweb-dev/sdk'
+import {BsGithub} from "react-icons/bs";
 import { AddressZero } from "@ethersproject/constants";
 import "./index.css"
 
@@ -164,10 +165,12 @@ const mintNFT=async()=>{
     return (
       <div className="landing">
         <h1 className='h1'>Welcome to phirieDAO</h1>
-        <p >A DAO for Miles' (a Bengali Rock Band) fans</p>
+        <p >A DAO for Bengali developers</p>
         <button onClick={connectWithMetamask} className="px-28 btn-hero">
           Connect your wallet
         </button>
+     
+        
       </div>
     );
   }
@@ -331,14 +334,31 @@ const mintNFT=async()=>{
               </button>
               {!hasVoted && (
                 <small >
-                  This will trigger multiple transactions that you will need to
+                  This will trigger multiple 
+                  transactions that you will need to
                   sign.
                 </small>
               )}
             </form>
           </div>
         </div>
+        <a 
+          className="logo"
+          href="https://github.com/Somesh-Debnath/js-dao"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsGithub/> 
+      </a>
+      <a
+            className="collection"
+           
+            href={`testnets.opensea.io/assets/0x19E930057d264Dd061f87461DbE97d090F69398b/0`}
+            target="_blank"
+            rel="noreferrer"
+          >{`🌊 `}</a>
       </div>
+      
     );
   };
 
@@ -353,6 +373,7 @@ const mintNFT=async()=>{
       onClick={mintNFT}>
          {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
       </button>
+     
     </div>
     );
 }
